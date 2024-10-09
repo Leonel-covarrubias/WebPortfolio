@@ -41,7 +41,7 @@ body {
 
 /* Right Content Area */
 .content {
-    background-color: #f0f0f0;
+    background-color: darkgray;
     width: 80%; /* Remaining 80% of the viewport width */
     padding: 20px;
     text-align: justify;
