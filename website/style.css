@@ -6,11 +6,12 @@
 }
 
 body {
-    font-family: Magneto, sans-serif;
+    font-family: "Matura MT Script Capitals", sans-serif;
     height: 100vh; /* Ensures the height of the body covers the viewport */
 }
 
 .container {
+    background-color: cornflowerblue;
     display: flex;
     height: 100vh; /* Full height of the viewport */
 }
