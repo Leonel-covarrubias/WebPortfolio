@@ -20,7 +20,7 @@ body {
 .header {
     background-color: cornflowerblue;
     color: white;
-    width: 20%; /* 20% of the viewport width */
+    width: 30%; /* 20% of the viewport width */
     padding: 20px;
 }
 
