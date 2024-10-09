@@ -1,15 +1,67 @@
-body {
-    background-color: cornflowerblue;
-    font-family: 'lato', sans-serif;
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-header {
-    background-color: cornflowerblue;
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Ensures the height of the body covers the viewport */
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Left Sidebar (Header) */
+.header {
+    background-color: #333;
     color: white;
+    width: 20%; /* 20% of the viewport width */
     padding: 20px;
-    text-align: center;
 }
+
+/* Header Links Styling */
+.header ul {
+    list-style-type: none;
+}
+
+.header ul li {
+    margin: 10px 0;
+}
+
+.header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Right Content Area */
+.content {
+    background-color: #f0f0f0;
+    width: 80%; /* Remaining 80% of the viewport width */
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks the elements vertically */
+    }
+
+    .header {
+        width: 100%; /* Header takes full width */
+        height: auto; /* Let it adjust based on content height */
+    }
+
+    .content {
+        width: 100%; /* Content also takes full width */
+        height: auto; /* Let it adjust based on content height */
+    }
+}
+
 nav a {
     color: white;
     margin: 0 15px;
