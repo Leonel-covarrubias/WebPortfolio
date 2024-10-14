@@ -18,8 +18,8 @@ body {
 
 /* Left Sidebar (Header) */
 .header {
-    background-color: dimgrey;
-    color: white;
+    background-color: whitesmoke;
+    color: #007bff;
     width: 20%; /* 20% of the viewport width */
     padding: 20px;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 .header ul li a {
-    color: white;
+    color: #007bff;
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -55,9 +55,9 @@ body {
 
 /* Right Content Area */
 .content {
-    background-color: whitesmoke;
+    background-color: darkgray;
     width: 80%; /* Remaining 80% of the viewport width */
-    padding: 40px;
+    padding: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center vertically */
@@ -92,6 +92,30 @@ body {
         width: 100%; /* Content also takes full width */
         height: auto; /* Let it adjust based on content height */
     }
+}
+/* LinkedIn Image Button Styling */
+.linkedin-button {
+    width: 50px; /* Adjust the size of the button */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth effect on hover */
+    position: absolute;
+    bottom: 20px; /* 20px from the bottom */
+    left: 50px;   /* 20px from the left */
+}
+
+.linkedin-button:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+.github-button {
+    width: 50px; /* Adjust the size of the button */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth effect on hover */
+    position: absolute;
+    bottom: 20px; /* 20px from the bottom */
+    left: 150px;   /* 20px from the left */
+}
+.github-button:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 nav a {
