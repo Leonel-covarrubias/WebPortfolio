@@ -18,7 +18,7 @@ body {
 
 /* Left Sidebar (Header) */
 .header {
-    background-color: #333;
+    background-color: dimgrey;
     color: white;
     width: 20%; /* 20% of the viewport width */
     padding: 20px;
@@ -28,7 +28,7 @@ body {
     margin-bottom: 40px;
     font-size: 2rem;
     text-align: center;
-    color: red; /* Header text color */
+    color: #007bff; /* Header text color */
 }
 
 /* Header Links Styling */
