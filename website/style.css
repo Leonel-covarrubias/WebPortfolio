@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "JetBrains Mono", sans-serif;
+    font-family: "Droid Sans", sans-serif;
     height: 100vh; /* Ensures the height of the body covers the viewport */
 }
 
@@ -18,10 +18,10 @@ body {
 
 /* Left Sidebar (Header) */
 .header {
-    background-color: cornflowerblue;
+    background-color: black;
     color: white;
-    width: 30%; /* 20% of the viewport width */
-    padding: 20px;
+    width: 20%; /* 20% of the viewport width */
+    padding: 40px;
 }
 
 /* Header Links Styling */
@@ -41,7 +41,7 @@ body {
 
 /* Right Content Area */
 .content {
-    background-color: darkgray;
+    background-color: black;
     width: 80%; /* Remaining 80% of the viewport width */
     padding: 20px;
     text-align: justify;
@@ -54,8 +54,10 @@ body {
     }
 
     .header {
-        width: 100%; /* Header takes full width */
-        height: auto; /* Let it adjust based on content height */
+        margin-bottom: 40px;
+        font-size: 2rem;
+        text-align: center;
+        color: darkblue; /* Header text color */
     }
 
     .content {
