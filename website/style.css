@@ -6,31 +6,41 @@
 }
 
 body {
-    font-family: "Droid Sans", sans-serif;
+    font-family: Arial, sans-serif;
     height: 100vh; /* Ensures the height of the body covers the viewport */
 }
 
+/* Flexbox container for two-column layout */
 .container {
-    background-color: cornflowerblue;
     display: flex;
     height: 100vh; /* Full height of the viewport */
 }
 
 /* Left Sidebar (Header) */
 .header {
-    background-color: black;
+    background-color: #333;
     color: white;
     width: 20%; /* 20% of the viewport width */
-    padding: 40px;
+    padding: 20px;
+}
+
+.header h1 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-align: center;
+    color: red; /* Header text color */
 }
 
 /* Header Links Styling */
 .header ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 .header ul li {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .header ul li a {
@@ -39,12 +49,32 @@ body {
     font-size: 1.2rem;
 }
 
+.header ul li a:hover {
+    text-decoration: underline;
+}
+
 /* Right Content Area */
 .content {
-    background-color: black;
+    background-color: whitesmoke;
     width: 80%; /* Remaining 80% of the viewport width */
-    padding: 20px;
-    text-align: justify;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+/* Header Colors */
+.content h1, .content h2 {
+    color: #007bff; /* Set header color */
+}
+
+/* Body Text Color */
+.content p {
+    color: #333333; /* Set body text color */
+    text-align: justify; /* Justify-align the text */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 /* Responsive Design */
@@ -54,10 +84,8 @@ body {
     }
 
     .header {
-        margin-bottom: 40px;
-        font-size: 2rem;
-        text-align: center;
-        color: darkblue; /* Header text color */
+        width: 100%; /* Header takes full width */
+        height: auto; /* Let it adjust based on content height */
     }
 
     .content {
